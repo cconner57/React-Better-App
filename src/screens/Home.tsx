@@ -7,13 +7,17 @@ import Banner from '../components/Banner';
 
 const Home = () => {
 	return (
-		<div>
-			<Header totalSuggestions='6'/>
-			<Upvote votes='3' />
-			<CommentTotal comments='4' />
-			<Banner />
-			<Category />
-			<Roadmap planned={2} inProgress={3} live={1} />
+		<div className='Home'>
+			<aside>
+				<Banner />
+				<Category />
+				<Roadmap planned={2} inProgress={3} live={1} />
+			</aside>
+			<main>
+				<Header totalSuggestions='6' />
+				<Upvote votes='3' />
+				<CommentTotal comments='4' />
+			</main>
 		</div>
 	);
 };

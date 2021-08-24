@@ -9,10 +9,10 @@ const Header = ({ totalSuggestions }: any) => {
 			<div className='Selection'>
 				<p>Sort by:</p>
 				<select name='' id=''>
-					<option value=''>Most Upvotes</option>
-					<option value=''>Least Upvotes</option>
-					<option value=''>Most Comments</option>
-					<option value=''>Least Comments</option>
+					<option value='1'>Most Upvotes</option>
+					<option value='2'>Least Upvotes</option>
+					<option value='3'>Most Comments</option>
+					<option value='4'>Least Comments</option>
 				</select>
 			</div>
 			<button>
