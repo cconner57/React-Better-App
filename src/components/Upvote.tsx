@@ -1,11 +1,10 @@
-import React from 'react';
-
-import UpArrow from '../assets/icon-arrow-up.svg';
+// import UpArrow from '../assets/icon-arrow-up.svg';
+import { ReactComponent as UpArrow} from '../assets/icon-arrow-up.svg'
 
 const Upvote = ({ votes }: any) => {
 	return (
 		<div className='Upvote'>
-			<img src={UpArrow} alt='Up Arrow' />
+			<UpArrow />
 			<p>{votes}</p>
 		</div>
 	);
