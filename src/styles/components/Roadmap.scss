@@ -1,13 +1,15 @@
 .Roadmap {
 	height: 178px;
 	width: 255px;
+	padding-top: 19px;
 	color: $back;
     border-radius: 10px;
+	background-color: $white;
 	section {
 		display: flex;
 		align-items: center;
 		&:first-child {
-			margin: 19px 24px 1rem;
+			margin: 0 24px 1rem;
 			justify-content: space-between;
 		}
 		h1 {

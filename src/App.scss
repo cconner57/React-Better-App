@@ -3,6 +3,9 @@
 @import 'styles/base/mixins';
 @import 'styles/base/typography';
 
+// Screens SCSS
+@import 'styles/components/Home.scss';
+
 // Components SCSS
 @import 'styles/components/Banner.scss';
 @import 'styles/components/Category';

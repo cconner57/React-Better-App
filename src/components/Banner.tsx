@@ -1,8 +1,8 @@
 const Banner = () => {
 	return (
 		<div className='Banner'>
-			<h1>Frontend Mentor</h1>
-            <h2>Feedback Board</h2>
+			<h2>Better App</h2>
+            <p>Feedback Board</p>
 		</div>
 	);
 };

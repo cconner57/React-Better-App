@@ -1,4 +1,21 @@
 .Banner {
-    border-radius: 10px;
-    background-image: url(/images/background-header.png);
+	height: 137px;
+	width: 255px;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border-radius: 10px;
+	background-image: url('../../assets/background-header.png');
+	background-size: cover;
+	user-select: none;
+	h2 {
+		@include H2;
+        margin-bottom: .25rem;
+        color: $white;
+	}
+	p {
+		@include Body2;
+		color: hsla(0, 0%, 100%, 0.75);
+	}
 }
