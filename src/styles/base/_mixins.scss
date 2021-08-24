@@ -1,0 +1,101 @@
+@mixin H1 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 35px;
+	letter-spacing: -0.33px;
+}
+
+@mixin H2 {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 29px;
+	letter-spacing: -0.25px;
+}
+
+@mixin H3 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: -0.25px;
+}
+
+@mixin H4 {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: -0.2px;
+}
+
+@mixin Body1 {
+	font-size: 1rem;
+	line-height: 23px;
+}
+
+@mixin Body2 {
+	font-size: 15px;
+	line-height: 22px;
+}
+
+@mixin Body3 {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 19px;
+}
+
+@mixin Button1 {
+	@include H4;
+	color: $white;
+	background-color: $purple;
+	border-radius: 10px;
+	&:hover {
+		background-color: hsl(282, 90%, 66%);
+	}
+}
+
+@mixin Button2 {
+	@include H4;
+	color: $white;
+	background-color: $blue;
+	border-radius: 10px;
+	&:hover {
+		background-color: hsl(230, 91%, 73%);
+	}
+}
+
+@mixin Button3 {
+	@include H4;
+	color: $white;
+	background-color: $gray2;
+	border-radius: 10px;
+	&:hover {
+		background-color: hsl(231, 26%, 52%);
+	}
+}
+
+@mixin Button4 {
+	@include H4;
+	color: $white;
+	background-color: $red;
+	border-radius: 10px;
+	&:hover {
+		background-color: hsl(0, 69%, 72%);
+	}
+}
+
+@mixin Back1 {
+	@include H4;
+	color: $back;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+@mixin Back2 {
+	@include H4;
+	color: $white;
+	background-color: $backButton;
+	border-radius: 10px;
+	&:hover {
+		text-decoration: underline;
+	}
+}

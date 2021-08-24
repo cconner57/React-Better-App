@@ -1,0 +1,42 @@
+.Roadmap {
+	height: 178px;
+	width: 255px;
+	color: $back;
+    border-radius: 10px;
+	section {
+		display: flex;
+		align-items: center;
+		&:first-child {
+			margin: 19px 24px 1rem;
+			justify-content: space-between;
+		}
+		h1 {
+			@include H3;
+		}
+	}
+	.Filter {
+		margin: 8px 24px;
+		p {
+			@include Body1;
+			margin-left: 1rem;
+		}
+		p:last-child {
+			margin-left: auto;
+			font-weight: bold;
+		}
+		.Dot {
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+		}
+		&:nth-child(2) .Dot {
+			background-color: $orange;
+		}
+		&:nth-child(3) .Dot {
+			background-color: $purple;
+		}
+		&:last-child .Dot {
+			background-color: $liteBlue;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.Upvote {
+	@include Body3;
+	display: inline-block;
+	text-align: center;
+	min-width: 40px;
+	border-radius: 10px;
+	background-color: hsl(230, 86%, 97%);
+	svg {
+		cursor: pointer;
+	}
+	p {
+		margin: 0 0.5rem 0.5rem;
+		color: $darkGray;
+		user-select: none;
+	}
+	&:hover {
+		background-color: hsl(230, 100%, 91%);
+	}
+	&:active {
+		background-color: $blue;
+		path {
+			stroke: white;
+		}
+		p {
+			color: white;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.Header {
+	height: 72px;
+	width: 825px;
+	display: flex;
+	align-items: center;
+	color: white;
+	border-radius: 10px;
+	background-color: hsl(230, 31%, 31%);
+	.Selection {
+		display: flex;
+		align-items: center;
+	}
+	button {
+		@include Button1; 
+		margin: 14px 16px 14px auto;
+		padding: 12px 25px;
+		background-color: $purple;
+		border: none;
+		border-radius: 10px;
+	}
+}
