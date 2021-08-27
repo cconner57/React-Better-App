@@ -1,15 +1,19 @@
 .Upvote {
 	@include Body3;
-	display: inline-block;
-	text-align: center;
-	min-width: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 53px;
+	width: 40px;
+	margin-right: 40px;
 	border-radius: 10px;
 	background-color: hsl(230, 86%, 97%);
 	svg {
 		cursor: pointer;
 	}
 	p {
-		margin: 0 0.5rem 0.5rem;
+		margin: 8px 0.5rem 0px;
 		color: $darkGray;
 		user-select: none;
 	}

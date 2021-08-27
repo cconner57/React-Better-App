@@ -1,6 +1,6 @@
 import { ReactComponent as Chat } from '../assets/icon-comments.svg';
 
-const CommentTotal = ({ comments }: any) => {
+const CommentTotal = ({ comments }: { comments: number }) => {
 	return (
 		<div className='CommentTotal'>
 			<Chat />

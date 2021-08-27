@@ -1,0 +1,20 @@
+.FeedbackItem {
+    height: 151px;
+    width: 825px;
+    margin-bottom: 20px;
+    padding: 2rem;
+	display: flex;
+    border-radius: 10px;
+    background-color: $white;
+	.Content {
+        h3 {
+            @include H3;
+            color: $darkGray;
+        }
+        p {
+            @include Body1;
+            margin: 4px 0 12px;
+            color: $back;
+        }
+	}
+}
