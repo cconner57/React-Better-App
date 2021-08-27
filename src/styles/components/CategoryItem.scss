@@ -1,0 +1,17 @@
+.CategoryItem {
+    display: inline-block;
+    margin: auto 14px 8px 0;
+    padding: 5px 16px 6px;
+    border-radius: 10px;
+    background-color: $gray;
+    h1 {
+        @include Body3;
+        color: $blue;
+        user-select: none;
+        text-transform: capitalize;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: hsl(230, 100%, 90%);
+    }
+}

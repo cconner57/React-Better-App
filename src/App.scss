@@ -9,10 +9,13 @@
 // Components SCSS
 @import 'styles/components/Banner.scss';
 @import 'styles/components/Category';
+@import 'styles/components/CategoryItem';
 @import 'styles/components//CommentTotal';
+@import 'styles/components//FeedbackItem.scss';
 @import 'styles/components/Header';
 @import 'styles/components/Roadmap';
 @import 'styles/components/Upvote';
+@import 'styles/components/NoFeedback.scss';
 
 * {
 	margin: 0;
