@@ -1,5 +1,6 @@
+import AddFeedbackButton from './AddFeedbackButton';
+
 import { ReactComponent as Icon } from '../assets/icon-suggestions.svg';
-import { ReactComponent as Plus } from '../assets/icon-plus.svg';
 
 interface HeaderProps {
 	totalSuggestions: number;
@@ -20,9 +21,7 @@ const Header = ({ totalSuggestions, setSort }: HeaderProps) => {
 					<option value='Least Comments'>Least Comments</option>
 				</select>
 			</div>
-			<button>
-				<Plus /> Add Feedback
-			</button>
+			<AddFeedbackButton />
 		</div>
 	);
 };

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Upvote from './Upvote';
 import CategoryItem from './CategoryItem';
 import CommentTotal from './CommentTotal';
@@ -9,8 +11,8 @@ interface CategoryProps {
 
 const FeedbackItem = ({ itemData, setCategory }: CategoryProps) => {
 	return (
-		<div className='FeedbackItem'>
-			<Upvote votes={itemData.upvotes} />
+		<Link className='FeedbackItem' to={`/details/${itemData.id}`}>
+			<Upvote votes={itemData.upvotes} direction='column' />
 			<div className='Content'>
 				<h3>{itemData.title}</h3>
 				<p>{itemData.description}</p>
@@ -20,7 +22,7 @@ const FeedbackItem = ({ itemData, setCategory }: CategoryProps) => {
 				/>
 			</div>
 			<CommentTotal comments={itemData?.comments?.length || 0} />
-		</div>
+		</Link>
 	);
 };
 

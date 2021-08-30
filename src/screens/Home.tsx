@@ -1,15 +1,13 @@
 import { useState } from 'react';
+
 import Header from '../components/Header';
-import Roadmap from '../components/Roadmap';
+import Roadmap from '../components/RoadmapModule';
 import CategoryList from '../components/CategoryList';
 import Banner from '../components/Banner';
 import FeedbackItem from '../components/FeedbackItem';
 import NoFeedback from '../components/NoFeedback';
 
 import data from '../data.json';
-console.log(
-	data[0].productRequests.filter((item) => item.category === 'feature')
-);
 
 const Home = () => {
 	const [category, setCategory] = useState('all');
@@ -23,22 +21,44 @@ const Home = () => {
 			return (a: { upvotes: number }, b: { upvotes: number }): any =>
 				a.upvotes - b.upvotes;
 		} else if (sortType === 'Most Comments') {
-			return (a: any, b: any): any => b?.comments.length - a?.comments.length;
+			return (a: any, b: any): any =>
+				(b.comments?.length || 0) - (a.comments?.length || 0);
 		} else if (sortType === 'Least Comments') {
-			return (a: any, b: any): any => a?.comments.length - b?.comments.length;
+			return (a: any, b: any): any =>
+				(a.comments?.length || 0) - (b.comments?.length || 0);
 		}
 	};
-	console.log(sortListItems(sort));
+
 	return (
 		<div className='Home'>
 			<aside>
 				<Banner />
 				<CategoryList category={category} setCategory={setCategory} />
-				<Roadmap planned={2} inProgress={3} live={1} />
+				<Roadmap
+					planned={
+						data[0].productRequests.filter((item) => item.status === 'planned')
+							.length
+					}
+					inProgress={
+						data[0].productRequests.filter(
+							(item) => item.status === 'in-progress'
+						).length
+					}
+					live={
+						data[0].productRequests.filter((item) => item.status === 'live')
+							.length
+					}
+				/>
 			</aside>
 			<main>
 				<Header
-					totalSuggestions={data[0].productRequests.length}
+					totalSuggestions={
+						category === 'all'
+							? data[0].productRequests.length
+							: data[0].productRequests.filter(
+									(item) => item.category === category
+							  ).length
+					}
 					setSort={setSort}
 				/>
 				{category === 'all' ? (
@@ -51,9 +71,11 @@ const Home = () => {
 							/>
 						);
 					})
-				) : data[0].productRequests.filter((item) => item.category === category)
-						.length !== 0 ? (
+				) : data[0].productRequests
+						.sort(sortListItems(sort))
+						.filter((item) => item.category === category).length !== 0 ? (
 					data[0].productRequests
+						.sort(sortListItems(sort))
 						.filter((item) => item.category === category)
 						.map((item): any => {
 							return (

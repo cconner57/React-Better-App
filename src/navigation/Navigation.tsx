@@ -17,7 +17,7 @@ const Navigation = () => {
 	return (
 		<Router>
 			<Switch>
-				<Route path='/details' exact component={Details} />
+				<Route path='/details/:id' exact component={Details} />
 				<Route path='/edit' exact component={EditFeedback} />
 				<Route path='/new' exact component={NewFeedback} />
 				<Route path='/roadmap' exact component={Roadmap} />

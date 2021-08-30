@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 interface RoadmapProps {
 	planned: number;
 	inProgress: number;
@@ -6,10 +8,10 @@ interface RoadmapProps {
 
 const Roadmap = ({ planned, inProgress, live }: RoadmapProps) => {
 	return (
-		<div className='Roadmap'>
+		<div className='RoadmapModule'>
 			<section>
 				<h1>Roadmap</h1>
-				<p>View</p>
+				<Link to='roadmap'>View</Link>
 			</section>
 			<section className='Filter'>
 				<div className='Dot' />
