@@ -1,0 +1,51 @@
+.RoadmapModule {
+	background-color: $white;
+	color: $back;
+	height: 178px;
+	padding-top: 19px;
+	width: 255px;
+    border-radius: 10px;
+	section {
+		align-items: center;
+		display: flex;
+		&:first-child {
+			justify-content: space-between;
+			margin: 0 24px 1rem;
+		}
+		h1 {
+			@include H3;
+		}
+		h1 + a {
+			color: $back;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.Filter {
+		margin: 8px 24px;
+		p {
+			@include Body1;
+			margin-left: 1rem;
+		}
+		p:last-child {
+			margin-left: auto;
+			font-weight: bold;
+		}
+		.Dot {
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+		}
+		&:nth-child(2) .Dot {
+			background-color: $orange;
+		}
+		&:nth-child(3) .Dot {
+			background-color: $purple;
+		}
+		&:last-child .Dot {
+			background-color: $liteBlue;
+		}
+	}
+}

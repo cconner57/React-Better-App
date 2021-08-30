@@ -1,0 +1,19 @@
+.BackButton {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	max-height: 20px;
+	width: 80px;
+	.Primary {
+		path {
+			stroke: $white;
+		}
+	}
+	h4 {
+		@include H4;
+		height: 20px;
+		letter-spacing: 0;
+		margin-left: 14px;
+		width: 56px;
+	}
+}

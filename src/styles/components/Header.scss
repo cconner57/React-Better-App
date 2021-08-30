@@ -1,13 +1,13 @@
 .Header {
 	@include H4;
-	height: 72px;
-	width: 825px;
-	margin-bottom: 24px;
-	display: flex;
 	align-items: center;
-	color: white;
-	border-radius: 10px;
 	background-color: hsl(230, 31%, 31%);
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	height: 72px;
+	margin-bottom: 24px;
+	width: 825px;
 	p {
 		font-weight: 700;
 	}
@@ -15,24 +15,15 @@
 		margin: 0 16px 0 24px;
 	}
 	.Selection {
-		margin-left: 38px;
-		display: flex;
 		align-items: center;
+		display: flex;
+		margin-left: 38px;
 		p {
 			font-weight: 400;
 		}
 		select {
-			margin-left: .5rem;
 			border: none;
+			margin-left: .5rem;
 		}
-	}
-	button {
-		@include Button1;
-		height: 44px;
-		width: 158px;
-		margin: 14px 16px 14px auto;
-		background-color: $purple;
-		border: none;
-		border-radius: 10px;
 	}
 }

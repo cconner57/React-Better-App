@@ -1,0 +1,44 @@
+.RoadmapItem {
+	background-color: $white;
+	border-radius: 10px;
+	height: 266px;
+	margin-bottom: 24px;
+	padding: 25px 32px 32px;
+	width: 350px;
+	.Filter {
+		align-items: center;
+		display: flex;
+		height: 23px;
+		margin-bottom: 0.5rem;
+		width: 100px;
+		.Dot {
+			border-radius: 50%;
+			height: 8px;
+			margin-right: 16px;
+			width: 8px;
+		}
+		p {
+			text-transform: capitalize;
+		}
+	}
+	.Description {
+		margin: 4px 0 16px;
+	}
+	.CategoryItem {
+		margin-bottom: 16px;
+		h1 {
+			@include Body3;
+			color: $blue;
+			text-transform: capitalize;
+			user-select: none;
+		}
+		&:hover {
+			background-color: hsl(230, 100%, 90%);
+			cursor: pointer;
+		}
+	}
+	.FeedbackCount {
+		align-items: center;
+		display: flex;
+	}
+}

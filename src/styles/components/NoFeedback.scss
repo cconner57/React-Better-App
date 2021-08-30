@@ -1,28 +1,18 @@
 .NoFeedback {
-    height: 70vh;
+    align-items: center;
+    background-color: $white;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
+    height: 70vh;
     justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: $white;
     h1 {
         @include H1;
-        margin: 53px 0 16px;
         color: $darkGray;
+        margin: 53px 0 16px;
     }
     p {
         @include Body1;
         color: $back;
     }
-    button {
-		@include Button1;
-		height: 44px;
-		width: 158px;
-        margin-top: 48px;
-		background-color: $purple;
-		border: none;
-        cursor: pointer;
-		border-radius: 10px;
-	}
 }

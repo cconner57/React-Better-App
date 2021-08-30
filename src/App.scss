@@ -5,20 +5,24 @@
 
 // Screens SCSS
 @import 'styles/components/Home.scss';
+@import 'styles/components/Roadmap';
 
 // Components SCSS
+@import 'styles/components/AddFeedbackButton.scss';
+@import 'styles/components/BackButton.scss';
 @import 'styles/components/Banner.scss';
 @import 'styles/components/Category';
 @import 'styles/components/CategoryItem';
-@import 'styles/components//CommentTotal';
-@import 'styles/components//FeedbackItem.scss';
+@import 'styles/components/CommentTotal';
+@import 'styles/components/FeedbackItem.scss';
 @import 'styles/components/Header';
-@import 'styles/components/Roadmap';
-@import 'styles/components/Upvote';
 @import 'styles/components/NoFeedback.scss';
+@import 'styles/components/RoadmapItem.scss';
+@import 'styles/components/RoadmapModule';
+@import 'styles/components/Upvote';
 
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }

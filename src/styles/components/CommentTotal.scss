@@ -1,8 +1,12 @@
 .CommentTotal {
 	@include Body1;
-	margin-left: auto;
-	display: flex;
 	align-items: center;
+	color: $darkGray;
+	display: flex;
+	font-weight: 700;
+	height: 23px;
+	margin-left: auto;
+	width: 44px;
 	svg {
 		margin-right: 0.5rem;
 	}

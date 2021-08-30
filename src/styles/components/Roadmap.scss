@@ -1,44 +1,36 @@
 .Roadmap {
-	height: 178px;
-	width: 255px;
-	padding-top: 19px;
-	color: $back;
-    border-radius: 10px;
-	background-color: $white;
-	section {
+	background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    padding: 10vh 165px 0;
+    width: 100vw;
+	header {
 		display: flex;
-		align-items: center;
-		&:first-child {
-			margin: 0 24px 1rem;
-			justify-content: space-between;
-		}
-		h1 {
-			@include H3;
-		}
-	}
-	.Filter {
-		margin: 8px 24px;
-		p {
-			@include Body1;
-			margin-left: 1rem;
-		}
-		p:last-child {
-			margin-left: auto;
-			font-weight: bold;
-		}
-		.Dot {
-			height: 8px;
-			width: 8px;
-			border-radius: 50%;
-		}
-		&:nth-child(2) .Dot {
-			background-color: $orange;
-		}
-		&:nth-child(3) .Dot {
-			background-color: $purple;
-		}
-		&:last-child .Dot {
-			background-color: $liteBlue;
+        background-color: $backButton;
+        border-radius: 10px;
+        padding: 27px 33px;
+		div {
+			height: 59px;
+			max-width: 103px;
+            h1 {
+                color: $white;
+            }
 		}
 	}
+    .Container {
+        display: flex;
+        justify-content: space-between;
+        .ColumnTitle {
+            margin: 48px 0 32px;
+        }
+        .RoadmapColumn {
+            h3 {
+                @include H3;
+                color: $darkGray;
+            }
+            h3 + p{
+                @include Body1;
+                color: $backButton;
+            }
+        }
+    }
 }

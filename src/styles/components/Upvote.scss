@@ -1,19 +1,15 @@
 .Upvote {
 	@include Body3;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	height: 53px;
-	width: 40px;
-	margin-right: 40px;
-	border-radius: 10px;
 	background-color: hsl(230, 86%, 97%);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	margin-right: 40px;
 	svg {
 		cursor: pointer;
 	}
 	p {
-		margin: 8px 0.5rem 0px;
 		color: $darkGray;
 		user-select: none;
 	}
@@ -28,5 +24,23 @@
 		p {
 			color: white;
 		}
+	}
+}
+
+.Column {
+	display: flex;
+	flex-direction: column;
+	height: 53px;
+	width: 40px;
+	p {
+		margin: 8px 0.5rem 0px;
+	}
+}
+
+.Row {
+	height: 40px;
+	width: 69px;
+	p {
+		margin-left: 0.5rem;
 	}
 }

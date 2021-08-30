@@ -1,12 +1,12 @@
 .Category {
-    height: 168px;
-    width: 255px;
-    margin: 24px 0;
-    padding: 24px;
+    background-color: $white;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 10px;
-    background-color: $white;
+    height: 168px;
+    margin: 24px 0;
+    padding: 24px;
+    width: 255px;
     .Active-Category {
         background-color: $blue;
         h1 {
