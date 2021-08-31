@@ -1,21 +1,22 @@
 .FeedbackItem {
-    background-color: $white;
-    border-radius: 10px;
+	background-color: $white;
+	border-radius: 10px;
 	display: flex;
-    height: 151px;
-    margin-bottom: 20px;
-    padding: 2rem;
-    text-decoration: none;
-    width: 825px;
+	height: 151px;
+	margin-bottom: 20px;
+	padding: 2rem;
+	width: 825px;
 	.Content {
-        h3 {
-            @include H3;
-            color: $darkGray;
-        }
-        p {
-            @include Body1;
-            margin: 4px 0 12px;
-            color: $back;
-        }
+        text-decoration: none;
+		h3 {
+			@include H3;
+			color: $darkGray;
+		}
+		p {
+			@include Body1;
+			margin: 4px 0 12px;
+			color: $back;
+		}
 	}
+
 }

@@ -1,11 +1,21 @@
-import React from 'react'
+import { useState } from 'react';
+import BackButton from '../components/BackButton';
+import EditFeedback from './EditFeedback';
 
 const Details = () => {
-    return (
-        <div>
-            Details
-        </div>
-    )
-}
+	const [comment, setComment] = useState('');
 
-export default Details
+	return (
+		<div>
+			<header>
+				<BackButton color='Primary' />
+				<EditFeedback />
+			</header>
+            <main>
+
+            </main>
+		</div>
+	);
+};
+
+export default Details;
