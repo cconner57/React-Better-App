@@ -11,18 +11,18 @@ interface CategoryProps {
 
 const FeedbackItem = ({ itemData, setCategory }: CategoryProps) => {
 	return (
-		<Link className='FeedbackItem' to={`/details/${itemData.id}`}>
+		<div className='FeedbackItem'>
 			<Upvote votes={itemData.upvotes} direction='column' />
-			<div className='Content'>
+			<Link className='Content' to={`/details/${itemData.id}`}>
 				<h3>{itemData.title}</h3>
 				<p>{itemData.description}</p>
 				<CategoryItem
 					categoryName={itemData.category}
 					setCategory={setCategory}
 				/>
-			</div>
+			</Link>
 			<CommentTotal comments={itemData?.comments?.length || 0} />
-		</Link>
+		</div>
 	);
 };
 

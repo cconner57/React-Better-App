@@ -1,0 +1,80 @@
+.NewFeedback {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	width: 100vw;
+	padding-left: 33vw;
+	background-color: hsl(0, 0%, 95%);
+	.BackButton {
+		justify-content: flex-start;
+	}
+	form {
+		height: 657px;
+		width: 540px;
+		position: relative;
+		padding: 52px 42px 40px;
+		background-color: $white;
+		margin-top: 40px;
+		border-radius: 10px;
+		svg {
+			position: absolute;
+			top: -28px;
+			left: 45px;
+		}
+		h1 {
+			@include H1;
+			margin-bottom: 40px;
+			color: $darkGray;
+		}
+		h4 {
+			@include H4;
+			margin-top: 24px;
+			color: $darkGray;
+		}
+		p {
+			@include Body2;
+			color: $back;
+		}
+		input,
+		select,
+		textarea {
+			@include Body2;
+			color: $back;
+			background-color: hsl(0, 0%, 95%);
+			border: none;
+			margin-top: 16px;
+			padding: 13px 24px;
+			border-radius: 10px;
+			&:focus {
+				outline: 2px solid $purple;
+			}
+		}
+		input,
+		select {
+			height: 48px;
+			width: 456px;
+		}
+		textarea {
+			height: 96px;
+			resize: none;
+			width: 456px;
+		}
+		.Buttons {
+			display: flex;
+			margin-top: 32px;
+			button:first-child {
+				@include Button3;
+				height: 44px;
+				margin-left: auto;
+				width: 93px;
+			}
+			button:last-child {
+				@include Button1;
+				height: 44px;
+				margin-left: 16px;
+				width: 144px;
+			}
+		}
+	}
+}
