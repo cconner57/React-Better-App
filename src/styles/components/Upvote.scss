@@ -6,9 +6,7 @@
 	display: flex;
 	justify-content: center;
 	margin-right: 40px;
-	svg {
-		cursor: pointer;
-	}
+	cursor: pointer;
 	p {
 		color: $darkGray;
 		user-select: none;
@@ -24,6 +22,16 @@
 		p {
 			color: white;
 		}
+	}
+}
+
+.Clicked {
+	background-color: $blue;
+	path {
+		stroke: white;
+	}
+	p {
+		color: $white;
 	}
 }
 

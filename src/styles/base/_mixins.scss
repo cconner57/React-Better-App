@@ -47,6 +47,8 @@
 	color: $white;
 	background-color: $purple;
 	border-radius: 10px;
+	cursor: pointer;
+	border: none;
 	&:hover {
 		background-color: hsl(282, 90%, 66%);
 	}
@@ -65,8 +67,10 @@
 @mixin Button3 {
 	@include H4;
 	color: $white;
-	background-color: $gray2;
+	background-color: $darkGray;
 	border-radius: 10px;
+	cursor: pointer;
+	border: none;
 	&:hover {
 		background-color: hsl(231, 26%, 52%);
 	}
