@@ -1,4 +1,4 @@
-import AddFeedbackButton from './AddFeedbackButton';
+import FeedbackButton from './FeedbackButton';
 
 import { ReactComponent as Icon } from '../assets/icon-suggestions.svg';
 
@@ -21,7 +21,7 @@ const Header = ({ totalSuggestions, setSort }: HeaderProps) => {
 					<option value='Least Comments'>Least Comments</option>
 				</select>
 			</div>
-			<AddFeedbackButton />
+			<FeedbackButton type='add' />
 		</div>
 	);
 };

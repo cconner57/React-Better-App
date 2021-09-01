@@ -1,4 +1,4 @@
-import AddFeedbackButton from './AddFeedbackButton';
+import FeedbackButton from './FeedbackButton';
 
 import { ReactComponent as Empty } from '../assets/illustration-empty.svg';
 
@@ -9,7 +9,7 @@ const NoFeedback = () => {
 			<h1>There is no feedback yet.</h1>
 			<p>Got a suggestion? Found a bug that needs to be squashed?</p>
 			<p>We love hearing abour new ideas to imrpove our app</p>
-			<AddFeedbackButton />
+			<FeedbackButton type='add' />
 		</div>
 	);
 };

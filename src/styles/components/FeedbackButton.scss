@@ -1,0 +1,24 @@
+.NewButton, .EditButton {
+    @include Button1;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.NewButton {
+    background-color: $purple;
+    margin: 14px 16px 14px auto;
+    width: 158px;
+    svg {
+        margin-right: 8px;
+    }
+}
+
+.EditButton {
+    background-color: $blue;
+    margin: 0 0 24px auto;
+    width: 142px;
+}

@@ -1,5 +1,5 @@
 import BackButton from '../components/BackButton';
-import AddFeedbackButton from '../components/AddFeedbackButton';
+import AddFeedbackButton from '../components/FeedbackButton';
 
 import data from '../data.json';
 import RoadmapItem from '../components/RoadmapItem';
@@ -12,7 +12,7 @@ const Roadmap = () => {
 					<BackButton color='Primary' />
 					<h1>Roadmap</h1>
 				</div>
-				<AddFeedbackButton />
+				<AddFeedbackButton type='add' />
 			</header>
 			<div className='Container'>
 				<div className='RoadmapColumn'>
