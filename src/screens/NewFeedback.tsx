@@ -35,7 +35,7 @@ const NewFeedback = () => {
 				<input type='text' name='title' id='title' onChange={onChangeHandler} />
 				<label htmlFor='category'>
 					<h4>Category</h4>
-					<p>Add a short, descriptive headline</p>
+					<p>Choose a category for your feedback</p>
 				</label>
 				<select name='category' id='category' onChange={onChangeHandler}>
 					<option value='feature'>Feature</option>

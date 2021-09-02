@@ -66,11 +66,12 @@
 
 @mixin Button3 {
 	@include H4;
-	color: $white;
 	background-color: $darkGray;
 	border-radius: 10px;
-	cursor: pointer;
 	border: none;
+	color: $white;
+	cursor: pointer;
+	margin-left: auto;
 	&:hover {
 		background-color: hsl(231, 26%, 52%);
 	}
@@ -78,9 +79,11 @@
 
 @mixin Button4 {
 	@include H4;
-	color: $white;
 	background-color: $red;
 	border-radius: 10px;
+	border: none;
+	color: $white;
+	cursor: pointer;
 	&:hover {
 		background-color: hsl(0, 69%, 72%);
 	}
