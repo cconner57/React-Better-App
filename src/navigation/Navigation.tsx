@@ -19,7 +19,7 @@ const Navigation = () => {
 			<Router>
 				<Switch>
 					<Route path='/details/:id' exact component={Details} />
-					<Route path='/edit' exact component={EditFeedback} />
+					<Route path='/edit/:id' exact component={EditFeedback} />
 					<Route path='/new' exact component={NewFeedback} />
 					<Route path='/roadmap' exact component={Roadmap} />
 					<Route path='/suggestions' exact component={Suggestions} />

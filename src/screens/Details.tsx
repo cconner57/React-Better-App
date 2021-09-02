@@ -45,7 +45,7 @@ const Details = () => {
 			<header>
 				<div className='TopHeader'>
 					<BackButton color='Secondary' />
-					<FeedbackButton type='edit' />
+					<FeedbackButton type='edit' itemID={itemDetails?.id}/>
 				</div>
 				<FeedbackItem
 					type='FeedbackDetails'
