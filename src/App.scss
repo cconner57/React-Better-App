@@ -12,10 +12,12 @@
 @import 'styles/screens/NewFeedback';
 
 // Components SCSS
+@import 'styles/components/AddComment.scss';
 @import 'styles/components/BackButton';
 @import 'styles/components/Banner.scss';
 @import 'styles/components/Category';
 @import 'styles/components/CategoryItem';
+@import 'styles/components/CommentItem.scss';
 @import 'styles/components/CommentTotal';
 @import 'styles/components/FeedbackButton';
 @import 'styles/components/FeedbackItem';

@@ -1,0 +1,47 @@
+.AddComment {
+	width: 730px;
+	margin: 24px 0 129px;
+	border-radius: 10px;
+	background-color: $white;
+	padding: 24px 32px 32px 34px;
+	color: $purple;
+	h3 {
+		@include H3;
+		color: $darkGray;
+	}
+	textarea {
+		resize: none;
+		width: 664px;
+		height: 80px;
+		margin: 24px 0 16px;
+		border-radius: 10px;
+		padding: 16px 24px;
+		background-color: hsl(0, 0%, 95%);
+		border: none;
+		color: $back;
+        overflow: hidden;
+		&::placeholder {
+			@include Body2;
+			color: $back;
+		}
+        &:focus {
+            outline: 2px solid $purple;
+        }
+	}
+	.Submission {
+		display: flex;
+		align-items: center;
+		p {
+			@include Body2;
+			color: $back;
+		}
+		button {
+			@include Button1;
+			height: 44px;
+			width: 142px;
+			margin-left: auto;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}

@@ -1,13 +1,10 @@
-.FeedbackItem {
+.FeedbackItem, .FeedbackDetails {
 	background-color: $white;
 	border-radius: 10px;
 	display: flex;
 	height: 151px;
-	margin-bottom: 20px;
-	padding: 2rem;
-	width: 825px;
 	.Content {
-        text-decoration: none;
+		text-decoration: none;
 		h3 {
 			@include H3;
 			color: $darkGray;
@@ -18,5 +15,17 @@
 			color: $back;
 		}
 	}
+}
 
+.FeedbackItem {
+	margin-bottom: 20px;
+	padding: 2rem;
+	width: 825px;
+	
+}
+
+.FeedbackDetails {
+	margin-bottom: 24px;
+	padding: 28px 32px;
+	width: 730px;
 }

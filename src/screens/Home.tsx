@@ -66,6 +66,7 @@ const Home = () => {
 						return (
 							<FeedbackItem
 								key={item.id}
+								type='FeedbackItem'
 								itemData={item}
 								setCategory={setCategory}
 							/>
@@ -81,6 +82,7 @@ const Home = () => {
 							return (
 								<FeedbackItem
 									key={item.id}
+									type='FeedbackItem'
 									itemData={item}
 									setCategory={setCategory}
 								/>

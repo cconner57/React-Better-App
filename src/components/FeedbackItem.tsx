@@ -5,13 +5,14 @@ import CategoryItem from './CategoryItem';
 import CommentTotal from './CommentTotal';
 
 interface CategoryProps {
+	type: "FeedbackItem" | "FeedbackDetails";
 	itemData: any;
 	setCategory: (category: string) => void;
 }
 
-const FeedbackItem = ({ itemData, setCategory }: CategoryProps) => {
+const FeedbackItem = ({ type, itemData, setCategory }: CategoryProps) => {
 	return (
-		<div className='FeedbackItem'>
+		<div className={type}>
 			<Upvote votes={itemData.upvotes} direction='column' />
 			<Link className='Content' to={`/details/${itemData.id}`}>
 				<h3>{itemData.title}</h3>

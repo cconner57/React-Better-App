@@ -1,0 +1,104 @@
+.CommentItem {
+	width: 666px;
+	display: flex;
+	margin: 28px 0 32px;
+	.CommentImage {
+		height: auto;
+		img {
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			margin-right: 32px;
+		}
+		.ReplyLine {
+			margin: 23px 0px 0 20px;
+			height: 60%;
+			width: 2px;
+			background-color: $back;
+            opacity: 0.1;
+		}
+	}
+	&-Container {
+		width: 100%;
+		.CommentItem-Header {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			p {
+				@include Body3;
+				margin-left: auto;
+			}
+			h3 {
+				@include H3;
+				color: $darkGray;
+			}
+			h3 + p {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				color: $back;
+			}
+		}
+		.ReplyItem {
+			display: flex;
+			margin-top: 32px;
+			img {
+				height: 40px;
+				width: 40px;
+				border-radius: 50%;
+				margin-right: 32px;
+			}
+			&-Container {
+				width: 100%;
+				.ReplyItem-Header {
+					display: flex;
+					align-items: center;
+					width: 100%;
+					p {
+						@include Body3;
+						margin-left: auto;
+					}
+					h3 {
+						@include H3;
+						color: $darkGray;
+					}
+					h3 + p {
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 20px;
+						color: $back;
+					}
+				}
+			}
+			&-Header + p {
+				@include Body2;
+				color: $back;
+				margin-top: 17px;
+				min-width: 100%;
+			}
+			&-Contact + p {
+				@include Body3;
+				color: $blue;
+			}
+			.ReplyItem-Header + p {
+				@include Body2;
+				color: $back;
+				margin-top: 17px;
+				min-width: 100%;
+				span {
+					color: $purple;
+				}
+			}
+		}
+	}
+	&-Header + p {
+		@include Body2;
+		color: $back;
+		margin-top: 17px;
+		min-width: 100%;
+	}
+	&-Contact + p {
+		@include Body3;
+		color: $blue;
+	}
+}
