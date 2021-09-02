@@ -11,7 +11,6 @@ const Details = lazy(() => import('../screens/Details'));
 const EditFeedback = lazy(() => import('../screens/EditFeedback'));
 const NewFeedback = lazy(() => import('../screens/NewFeedback'));
 const Roadmap = lazy(() => import('../screens/Roadmap'));
-const Suggestions = lazy(() => import('../screens/Suggestions'));
 
 const Navigation = () => {
 	return (
@@ -22,7 +21,6 @@ const Navigation = () => {
 					<Route path='/edit/:id' exact component={EditFeedback} />
 					<Route path='/new' exact component={NewFeedback} />
 					<Route path='/roadmap' exact component={Roadmap} />
-					<Route path='/suggestions' exact component={Suggestions} />
 					<Route path='/' exact component={Home} />
 					<Redirect to='/' />
 				</Switch>

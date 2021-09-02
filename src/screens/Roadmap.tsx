@@ -22,8 +22,9 @@ const Roadmap = () => {
 					</div>
 					{data[0].productRequests
 						.filter((item) => item.status === 'planned')
-						.map((item) => (
+						.map((item, key) => (
 							<RoadmapItem
+								key={key}
 								status={item.status}
 								title={item.title}
 								description={item.description}
@@ -40,8 +41,9 @@ const Roadmap = () => {
 					</div>
 					{data[0].productRequests
 						.filter((item) => item.status === 'in-progress')
-						.map((item) => (
+						.map((item, key) => (
 							<RoadmapItem
+								key={key}
 								status={item.status}
 								title={item.title}
 								description={item.description}
@@ -58,8 +60,9 @@ const Roadmap = () => {
 					</div>
 					{data[0].productRequests
 						.filter((item) => item.status === 'live')
-						.map((item) => (
+						.map((item, key) => (
 							<RoadmapItem
+								key={key}
 								status={item.status}
 								title={item.title}
 								description={item.description}
